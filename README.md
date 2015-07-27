@@ -17,8 +17,8 @@ where
 ```haskell
  type C = CombExp
 ```
-and then the list `haskell x0 :: [Rational]` gives us the coefficients of the PowerSeries
-for the S defined above. In other words, `haskell (x0!!n)` multiplied by factorial(n)
+and then the list `x0 :: [Rational]` gives us the coefficients of the PowerSeries
+for the S defined above. In other words, `(x0!!n)` multiplied by factorial(n)
 gives you the number of functional graphs with n nodes (which should equal n^n).
 
 
