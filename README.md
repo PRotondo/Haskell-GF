@@ -10,6 +10,8 @@ To compute with the system
 which correspond to functional graphs (sets of cycles of rooted trees!),
 we write
  gen (\(x0 :: C) (x1 :: C) (x2:: C) -> [ Set x1, Cycle x2, Prod Atom (Set x2)]),
+where
+ type C = CombExp,
 and then the list x0 :: [Rational] gives us the coefficients of the PowerSeries
 for the S defined above. In other words, (x0!!n) multiplied by factorial(n)
 gives you the number of functional graphs with n nodes (which should equal n^n).
